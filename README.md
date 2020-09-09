@@ -19,7 +19,7 @@ A React, Hooks and Redux (RTK) based application coding challenge from Bayes Esp
    - When a user arrives on the new page, the matches should be cleared from the Redux store and loaded again from the API
    - The API response is paginated, not all matches are returned in a single request, add a "load more" button unless no more matches can be loaded.
    - While loading data, display a loading symbol in the application.
-   - _(bonus)_ Filter the matches based on game title, add radio buttons to the interface to let users decide what they want to see.
+   - _(bonus)_ Filter the matches based on game title, add checkboxes to the interface to let users decide what they want to see.
    - _(bonus)_ Load more matches when the user scrolls to the bottom of the screen, a.k.a. infinite scroll.
 
 4. **Save changes**: Send JSON data of a match in the body of a `POST` request to `http://localhost:8080/api/match`.

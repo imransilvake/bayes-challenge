@@ -143,7 +143,7 @@ const MatchList: FC = () => {
 	 * @param matches
 	 */
 	const getMatches = (matches: Match[]): Match[] => {
-		return matches.filter((f: Match) => !filter || f.title === filter);
+		return matches.filter((f: Match) => !filter.length || filter.includes(f.title));
 	};
 
 	return (

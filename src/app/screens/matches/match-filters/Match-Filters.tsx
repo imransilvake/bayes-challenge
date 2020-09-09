@@ -16,7 +16,7 @@ const MatchFilters: FC = () => {
 	// hook: filter state
 	const dispatch = useDispatch();
 	const { token } = useSelector((state) => state);
-	const [filterValue, setFilterValue] = useState('');
+	const [filterValues, setFilterValues] = useState<string[]>([]);
 
 	// filter options
 	const filterOptions: MatchFilterType[] = [
@@ -26,11 +26,9 @@ const MatchFilters: FC = () => {
 	];
 
 	useEffect(() => {
-		if (filterValue) {
-			// apply filter
-			dispatch(actions.applyFilter(filterValue));
-		}
-	}, [dispatch, filterValue]);
+		// apply filter
+		dispatch(actions.applyFilter(filterValues));
+	}, [dispatch, filterValues]);
 
 	return !token ? (
 		<span />
@@ -42,15 +40,19 @@ const MatchFilters: FC = () => {
 					{filterOptions.map((filter, idx) => (
 						<ToggleButton
 							key={idx}
-							type="radio"
+							type="checkbox"
 							variant="secondary"
 							name="filter"
 							className="by-toggle"
 							value={filter.value}
-							checked={filterValue === filter.value}
-							onChange={(e: ChangeEvent<HTMLInputElement>) =>
-								setFilterValue(e.currentTarget.value)
-							}
+							checked={filterValues.includes(filter.value)}
+							onChange={(e: ChangeEvent<HTMLInputElement>) => {
+								setFilterValues((prev: string[]) =>
+									filterValues.includes(filter.value)
+										? [...prev].filter((v) => v !== e.currentTarget.value)
+										: [...prev, e.currentTarget.value]
+								);
+							}}
 						>
 							{filter.name.toUpperCase()}
 						</ToggleButton>
