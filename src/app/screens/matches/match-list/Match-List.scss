@@ -1,0 +1,110 @@
+@import '../../../../assets/scss/variables';
+
+.by-matches-list {
+	margin: 0 30px 30px;
+
+    .by-load-more {
+        text-align: center;
+    }
+
+	.by-items-row {
+		.by-item-col {
+			margin-bottom: 20px;
+
+			.by-item {
+				background-color: $white;
+				border-bottom: 1px solid darken($neutral-6, 2);
+				margin-bottom: 10px;
+				padding: 20px;
+				position: relative;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.by-title {
+					border-bottom: 2px solid darken($teal, 10);
+					display: inline-block;
+					padding-bottom: 5px;
+					text-transform: uppercase;
+				}
+
+				.by-tournament {
+					color: darken($neutral-8, 35);
+					margin-bottom: 20px;
+				}
+
+				.by-teams {
+					background-color: $neutral-1;
+					margin-bottom: 15px;
+					padding: 12px 8px;
+
+					.by-score {
+						text-align: center;
+						
+						h5 {
+							font-weight: 600;
+							margin-bottom: 0;
+						}
+
+						h6 {
+							text-transform: lowercase;
+						}
+					}
+
+					.by-team {
+						display: flex;
+						justify-content: space-between;
+
+						&.by-team-a {
+							margin-bottom: 2px;
+						}
+
+						&.by-team-b {
+							h6 {
+								margin-bottom: 0;
+							}
+						}
+
+						h6 {
+							font-weight: 600;
+
+							&:last-child {
+								font-weight: 500;
+							}
+						}
+                    }
+				}
+
+				.by-start,
+				.by-status {
+					h5 {
+						font-size: 17px;
+						font-weight: 600;
+						margin: 10px 0 2px;
+					}
+
+					p {
+						margin: 0;
+					}
+				}
+
+				.by-archive {
+					position: absolute;
+					right: 10px;
+					top: 10px;
+
+					Button {
+						padding: 3px 10px;
+
+						&:focus,
+						&:active {
+							box-shadow: none !important;
+							outline: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

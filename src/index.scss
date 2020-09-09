@@ -1,0 +1,14 @@
+@import './assets/scss/variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all';
+
+body {
+    background-color: darken($neutral-4, 2);
+    font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 0;
+
+	img {
+		max-width: 100%;
+	}
+}

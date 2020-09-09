@@ -1,0 +1,39 @@
+@import '../../../../assets/scss/variables';
+
+.by-matches-filter {
+	margin: 0 30px 30px;
+
+	h5 {
+		background-color: darken($dark-teal, 15);
+		color: $white;
+		font-size: 18px;
+		margin: 0;
+		padding: 8px;
+		text-align: center;
+	}
+
+	.by-filters {
+		background-color: $dark-teal;
+		border-bottom: 1px solid darken($dark-teal, 10);
+		padding: 15px;
+		text-align: center;
+
+		.by-toggle-group {
+			.by-toggle {
+				background-color: $dark-teal;
+				border: 1px solid darken($dark-teal, 15);
+				box-shadow: none;
+				outline: 0;
+
+				&.active {
+					background-color: darken($dark-teal, 15);
+				}
+
+				&:focus, &:active {
+					box-shadow: none;
+					outline: 0;
+				}
+			}
+		}
+	}
+}

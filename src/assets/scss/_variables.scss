@@ -1,0 +1,36 @@
+@import '~bootstrap/scss/functions';
+
+$teal: #2ce2ae;
+$dark-teal: #17bc90;
+$primary: $dark-teal;
+$dark-grey: #868686;
+$dark-accent: #333b4d;
+$red-accent: #e24c4b;
+$yellow-accent: #ffcf5c;
+$blue-accent: #242c3d;
+$neutral-1: #f9f9f9;
+$neutral-2: rgba(#d8d8d8, 0.28);
+$neutral-3: rgba(#d8d8d8, 0.14);
+$neutral-4: #F4F6F8;
+$neutral-5: rgba(0, 0, 0, 0.2);
+$neutral-6: #ece9f1;
+$neutral-7: #d0c9d6;
+$neutral-8: #ecebed;
+$neutral-9: #495057;
+$neutral-10: #333B4D;
+$neutral-11: #fcfcfc;
+$neutral-12: #aba8a8;
+$neutral-13: #f3f6f8;
+$white: #ffffff;
+$teal-gradient: linear-gradient(45deg, #2ce2ae 0%, $dark-teal 100%);
+$neutral-gradient: linear-gradient(45deg, #cccccc 0%, $neutral-10 100%);
+$shadowgray: rgba(107, 107, 107, 0.34);
+$textdim: #9fa0a4;
+$listBgColor: #f4f6f8;
+$separatorColor: #ededed;
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$border-radius: 4px;
+$custom-control-indicator-size: 1.25rem;
+
+@import '~bootstrap/scss/variables';

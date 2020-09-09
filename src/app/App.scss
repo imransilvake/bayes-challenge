@@ -1,0 +1,25 @@
+@import './../assets/scss/variables';
+
+.by-app {
+	header {
+		align-items: center;
+		background-color: $white;
+		border-bottom: 1px solid darken($neutral-6, 2);
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+		padding: 8px 30px;
+
+		.by-logo {
+			a {
+				margin: 0;
+
+				img {
+					display: block;
+					height: 54px;
+					width: 115px;
+				}
+			}
+		}
+	}
+}

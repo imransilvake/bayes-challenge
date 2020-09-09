@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables';
+
+.by-scroll-to-top {
+	bottom: 15px;
+	position: fixed;
+	right: 20px;
+
+	button {
+		background-color: darken($dark-teal, 2);
+		border: none;
+		border-radius: 4px;
+		box-shadow: none;
+		cursor: pointer;
+		outline: 0;
+		padding: 0;
+
+		img {
+			display: block;
+			height: 40px;
+			width: 38px;
+		}
+
+		&:hover {
+			filter: brightness(110%);
+		}
+	}
+}
