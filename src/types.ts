@@ -15,5 +15,5 @@ export type State = {
 	page: number;
 	loading: boolean;
 	finished: boolean;
-	filter: string;
+	filters: string[];
 };

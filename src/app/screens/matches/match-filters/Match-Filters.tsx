@@ -27,7 +27,7 @@ const MatchFilters: FC = () => {
 
 	useEffect(() => {
 		// apply filter
-		dispatch(actions.applyFilter(filterValues));
+		dispatch(actions.applyFilters(filterValues));
 	}, [dispatch, filterValues]);
 
 	return !token ? (

@@ -12,7 +12,7 @@ const initialState: State = {
 	page: 0,
 	loading: false,
 	finished: false,
-	filter: ''
+	filters: []
 };
 
 // memory slice
@@ -35,8 +35,8 @@ export const { reducer, actions } = createSlice({
 		setFinished: (state, action) => {
 			state.finished = action.payload;
 		},
-		applyFilter: (state, action) => {
-			state.filter = action.payload;
+		applyFilters: (state, action) => {
+			state.filters = action.payload;
 		},
 		archiveMatch: (state, action) => {
 			state.matches = {

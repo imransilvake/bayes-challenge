@@ -23,7 +23,7 @@ const server = process.env.REACT_APP_API_URL;
 const MatchList: FC = () => {
 	// hooks
 	const dispatch = useDispatch();
-	const { token, matches, page, loading, finished, filter } = useSelector((state) => state);
+	const { token, matches, page, loading, finished, filters } = useSelector((state) => state);
 	const pageState = useRef(-1);
 
 	useEffect(() => {
@@ -143,7 +143,7 @@ const MatchList: FC = () => {
 	 * @param matches
 	 */
 	const getMatches = (matches: Match[]): Match[] => {
-		return matches.filter((f: Match) => !filter.length || filter.includes(f.title));
+		return matches.filter((f: Match) => !filters.length || filters.includes(f.title));
 	};
 
 	return (
