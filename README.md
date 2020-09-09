@@ -6,13 +6,7 @@ A React, Hooks and Redux (RTK) based application coding challenge from Bayes Esp
 </p>
 
 
-## Run
-1. Execute `npm run server` to host the API on http://localhost:8080.
-2. Execute `npm install` in the root folder of the challenge.
-3. Execute `npm start` to host the React application on http://localhost:3000.
-
-
-## Tasks
+## Content
 1. **Sign in**: Use the Fetch API to make a `POST` request to `http://localhost:8080/api/sign-in` to receive a token.
    - The `POST` body should look like `{ "email": "anything@anything.com", "password": "anything" }`.
    - _(bonus)_ This token expires in 30 seconds. When the API returns `401 - Unauthorized`, a modal should pop up allowing the user to sign in again.
@@ -30,3 +24,19 @@ A React, Hooks and Redux (RTK) based application coding challenge from Bayes Esp
 
 4. **Save changes**: Send JSON data of a match in the body of a `POST` request to `http://localhost:8080/api/match`.
    - Allow users to archive matches.
+
+
+## Libraries and Frameworks
+
+#### External 
+- [X] [TypeScript](https://www.typescriptlang.org/)
+- [X] [Redux Toolkit](https://redux-toolkit.js.org/)
+- [X] [Redux Devtools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
+- [X] [Bootstrap](https://react-bootstrap.github.io/)
+- [X] [FontAwesome](https://fontawesome.com/)
+
+
+## Information
+1. Execute `npm run server` to host the API on http://localhost:8080.
+2. Execute `npm install` in the root folder of the challenge.
+3. Execute `npm start` to host the React application on http://localhost:3000.
