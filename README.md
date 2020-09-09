@@ -1,9 +1,11 @@
-# Bayes Frontend Challenge
+# Bayes Challenge
+A React, Hooks and Redux (RTK) based application coding challenge from Bayes Esports.
 
 ## Run
 1. Execute `npm run server` to host the API on http://localhost:8080.
 2. Execute `npm install` in the root folder of the challenge.
 3. Execute `npm start` to host the React application on http://localhost:3000.
+
 
 ## Tasks
 1. **Sign in**: Use the Fetch API to make a `POST` request to `http://localhost:8080/api/sign-in` to receive a token.
