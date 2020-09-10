@@ -1,6 +1,6 @@
 // react
 import React, { FC } from 'react';
-import { Switch, Route, NavLink } from 'react-router-dom';
+import { Switch, Route, Link } from 'react-router-dom';
 
 // redux
 import { useSelector } from './slices/store';
@@ -22,9 +22,9 @@ const App: FC = () => {
 			<header>
 				{/* logo */}
 				<div className="by-logo">
-					<NavLink exact to={token ? '/matches' : '/'}>
+					<Link to={token ? '/matches' : '/'}>
 						<img src={Logo} alt="logo" />
-					</NavLink>
+					</Link>
 				</div>
 			</header>
 
